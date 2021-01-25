@@ -27,6 +27,8 @@ bot_token = "INSERT DISCORD BOT TOKEN"
 rapidapi_key = "INSERT KANJI ALIVE API KEY"
 ```
 
+The `bot_token` can be obtained by creating a new application through the [Discord Developer Portal](https://discord.com/developers/applications), and the `rapidapi_key` through the [Rapid API](https://rapidapi.com/KanjiAlive/api/learn-to-read-and-write-japanese-kanji) landing page for Kanji Alive.
+
 ## Notes
 To-do's and areas of improvement:
 * Port source code from Python to Node.js.
@@ -34,4 +36,4 @@ To-do's and areas of improvement:
 * Implement additional functionality like Google's [Translation API](https://cloud.google.com/translate/)
 * Ability to search for synonyms
 * Add links to audio recordings of vocabulary to embed object
-* `?kanji` command that perhaps can scrape data from [#kanji Jisho.org searches](https://jisho.org/search/%E6%96%87%E5%AD%A6%20%23kanji)
+* `?kanji` command that perhaps can scrape data from [#kanji Jisho.org webpage](https://jisho.org/search/%E6%96%87%E5%AD%A6%20%23kanji) using XPath.

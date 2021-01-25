@@ -10,8 +10,6 @@ from sqlite3 import Error
 from discord.ext import commands
 from dotenv import load_dotenv
 
-import unicodedata
-
 # check if .env file exists in current directory
 if not os.path.isfile(".env"):
     print("A .env file containing the Discord bot token and Kanji Alive API key is required!")
