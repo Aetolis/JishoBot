@@ -1,12 +1,12 @@
 # JishoBot
 
-![](https://github.com/Aetolis/JishoBot/blob/main/figs/JishoBot_logo.png)
+![](https://github.com/Aetolis/JishoBot/blob/JishoBot_DF/figs/JishoBot_logo.png)
 
 **This version of JishoBot, `JishoBot_DF.py`, stores data in a normalized tabular format using pandas DataFrames. For the most up to date version of JishoBot, please refer to the main branch of the repository.**
 
 **JishoBot** is a [Discord](https://discord.com/company) bot that allows users of the popular video and text communication service to search for the definitions, translations, stroke order, etc. of Japanese words via the `?search` command.
 
-![](https://github.com/Aetolis/JishoBot/blob/main/figs/embed_example.png)
+![](https://github.com/Aetolis/JishoBot/blob/JishoBot_DF/figs/embed_example.png)
 
 The bot responds to the `?search` command using an embed object that contains (when applicable), a hyperlink to the [Jisho.org page](https://jisho.org/word/%E6%96%87%E5%AD%A6) for the keyword, the english definition, the parts of speech, and hyperlinks a static image ([文](https://media.kanjialive.com/kanji_strokes/bun-fumi_4.svg)[学](https://media.kanjialive.com/kanji_strokes/mana(bu)_8.svg)) and stroke order animation ([文](https://media.kanjialive.com/kanji_animations/kanji_mp4/bun-fumi_00.mp4)[学](https://media.kanjialive.com/kanji_animations/kanji_mp4/mana(bu)_00.mp4)) for each individual kanji. The embed object was created to be as compact and intuitive as possible.
 
@@ -14,9 +14,9 @@ JishoBot is coded in Python and utilizes the [discord.py](https://discordpy.read
 
 When a user searches for a keyword or the keyword contains kanji that JishoBot has not encountered before, the nessecary data is collected from the Jisho.org and Kanji Alive APIs. JishoBot then subsequently stores the information in several normalized pandas DataFrames, which can be found in the `exports` directory as .csv files.
 
-![](https://github.com/Aetolis/JishoBot/blob/main/figs/jisho_data.png)
+![](https://github.com/Aetolis/JishoBot/blob/JishoBot_DF/figs/jisho_data.png)
 
-![](https://github.com/Aetolis/JishoBot/blob/main/figs/kanji_data.png)
+![](https://github.com/Aetolis/JishoBot/blob/JishoBot_DF/figs/kanji_data.png)
 
 This method of storing the data is flawed because in the case where there are different keywords that contain the same kanji, the kanji data is duplicated. The version of JishoBot in the main branch of this repository resolves this flaw.
 
